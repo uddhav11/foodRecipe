@@ -13,7 +13,7 @@ function App() {
     setError("");
 
     try {
-      const response = await fetchMeal(recipe);
+      const response = await fetchMeal(recipe); 
       setDatas(response);
       console.log(response);
     } catch (error) {

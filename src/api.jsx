@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL= 'https://www.themealdb.com/api/json/v1/1/search.php';
+const API_URL= process.env.API_URL ;
+
 
 export const fetchMeal= async (query) => {
     try{
